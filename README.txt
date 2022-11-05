@@ -1,7 +1,8 @@
 Interactive GCC
 ===============
 
-Interactive GCC (igcc) is a real-eval-print loop (REPL) for C/C++ programmers.
+Interactive GCC (igcc) is a small hack pretending to be a real-eval-print loop
+(REPL) for C/C++ programmers.
 
 It can be used like this:
 
@@ -73,40 +74,29 @@ Your own libs can be linked too:
  defined_in_cpp saying hello.
  g++> 
 
-The cstdio, iostream and string headers are automatically included, and the std namespace is automatically in scope.
+The cstdio, iostream and string headers are automatically included, and the std
+namespace is automatically in scope.
 
 Downloading and using
 ---------------------
 
-Download the IGCC tarball from the Sourceforge download area:
+Download the IGCC tarball from the download area:
 
-https://sourceforge.net/projects/igcc/files/
+https://codeberg.org/andybalaam/igcc/releases
 
 Untar it like so:
 
- tar -xjf igcc-0.1.tar.bz2
+ tar -xjf igcc-*.tar.gz
 
 And then start the program like this:
 
- cd igcc-0.1
+ cd igcc-*/
  ./igcc
 
-Then type the C++ code you want to execute. It will be compiled with GCC and the results (if any) will be displayed.
+Then type the C++ code you want to execute. It will be compiled with GCC and the
+results (if any) will be displayed.
 
 Type .h to see some (minimal) help.
-
-Developing
-----------
-
-IGCC is a small python wrapper around GCC.
-
-Check out the code here:
-
- git clone git://igcc.git.sourceforge.net/gitroot/igcc/igcc
-
-Or browse the source here:
-
-http://igcc.git.sourceforge.net/git/gitweb.cgi?p=igcc/igcc;a=tree
 
 Links
 -----
@@ -114,19 +104,14 @@ Links
 IGCC home page:
 http://www.artificialworlds.net/wiki/IGCC/IGCC
 
-IGCC Sourceforge page:
-http://sourceforge.net/projects/igcc/
+IGCC project page:
+https://codeberg.org/andybalaam/igcc
 
 Andy Balaam's home page:
 http://www.artificialworlds.net
 
 Andy Balaam's blog:
 http://www.artificialworlds.net/blog
-
-Contact
--------
-
-Andy Balaam may be contacted on axis3x3 at users dot sourceforge dot net
 
 Copyright
 ---------
